@@ -2,6 +2,11 @@ body {
     padding-top: 5rem;
 }
 
+
+h1,h2,h3,h4,h5, h6{
+    font-weight: bolder;
+}
+
 .properties-photo{
     width:100%x;
     height:200px;
@@ -30,3 +35,43 @@ body {
     
 }
 
+.label{
+    font-weight: bolder;
+}
+
+.input-bedrooms, .input-bathrooms, .input-price, .input-proptype, .input-location, .input-photo{
+    width:30%;
+
+}
+
+
+
+.align{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.align-two{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.property-info{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.property-rooms{
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}

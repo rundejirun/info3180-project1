@@ -3,14 +3,14 @@ from . import db
 class Property(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(100))
+    title = db.Column(db.String())
     description = db.Column(db.Text())
-    bedrooms = db.Column(db.String(10))
-    bathrooms = db.Column(db.String(10))
-    price = db.Column(db.String(30))
-    proptype = db.Column(db.String(20))
-    location = db.Column(db.String(200), unique=True)
-    photo = db.Column(db.String(150))
+    bedrooms = db.Column(db.String())
+    bathrooms = db.Column(db.String(500))
+    price = db.Column(db.String())
+    proptype = db.Column(db.String())
+    location = db.Column(db.String())
+    photo = db.Column(db.String())
 
     def __init__(self, title, description, bedrooms, bathrooms, price, proptype, location, photo):
         self.title = title

@@ -6,15 +6,15 @@
     <div class = "property-card">
         <img class="property-photo" src="{{url_for('getPhoto',filename=property.photo)}}">
         <h5 class = "title">{{property.title}}</h5>
-        <div id = "property-info">
+        <div class = "property-info">
             <p class = "price">{{property.price}}</p>
             <p class = "proptype">{{property.proptype}}</p>
         </div>
         <p class = "type">{{property.description}}</p>
 
-        <div>
-            <p class = "type">{{property.bedrooms}} {{property.bathrooms}}</p>
-            <p class = "type"></p>
+        <div class= "property-rooms">
+            <p class = "type">{{property.bedrooms}} Bedrooms</p>
+            <p class = "type">{{property.bathrooms}} Bathrooms</p>
         </div>
         
         <p class = "loc">{{property.location}}</p>

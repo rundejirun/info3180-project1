@@ -9,10 +9,10 @@
     {% for property in properties %}
     <li class="property-card">
         <img class="properties-photo" src="{{ url_for('getPhoto', filename=property.photo) }}" alt ="Picture of property"> <br />
-        <p class="properties-title">{{ property.title }}</p>
+        <h6 class="properties-title">{{ property.title }}</h6>
         <p class="properties-location">{{ property.location }}</p>
         <p class="properties-price">{{ property.price }}</p>
-        <a href="{{ url_for('property', propertyid=property.id) }}" class="go-to">View Property</a>
+        <a href="{{ url_for('property', propertyid=property.id) }}" class="btn btn-primary">View Property</a>
         
     </li>
     {% endfor %}
